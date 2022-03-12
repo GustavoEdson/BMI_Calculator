@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root {
-    --primary--color: rgb(44, 161, 136)
+    --primary--color: rgba(17, 87, 109, 0.658);
+    --primary-color-darker: rgb(219, 80, 80);
 }
 
 * {
@@ -12,13 +13,13 @@ body {
     margin: 0;
     padding: 0;
     background: var(--primary--color);
-    font-family: 'Opens sans', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
     line-height: 1.5em;
 }
 
-.form {
-    max-width: 550px;
+.container {
+    max-width: 640px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
@@ -26,19 +27,16 @@ body {
 }
 
 form input,
+form label,
 form button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-form button {
-    background-attachment: var(--primary--color);
-}
-
 form input {
     font-size: 24px;
-    height: 40px;
+    height: 50px;
     padding: 0 20px;
 }
 
@@ -58,27 +56,15 @@ form button {
 }
 
 form button:hover {
-    background-color: rgb(224, 112, 112);
+    background: var(--primary-color-darker)
 }
 
-form h1 {
-    font-size: 25px;
+.paragrafo-resultado,
+.bad {
+    background-color: rgb(88, 207, 138);
+    padding: 10px 20px;
 }
 
-form tabela {
-    line-height: 70%
-}
-
-div {
-    max-width: 540px;
-    background: var(--primary--color);
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 700;
-    height: 50px;
-    width: 100%;
-}
-
-resultado {
-    line-height: 70%
+.bad {
+    background-color: rgb(223, 65, 65);
 }
